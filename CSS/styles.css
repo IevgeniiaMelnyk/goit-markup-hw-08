@@ -1,0 +1,278 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --button-primary-color-hover: #188CE8;
+    --primari-white-color: #FFFFFF;
+    --button-color: #F5F4FA;
+    --link-contacts-color: rgba(255, 255, 255, 0.6);
+    --background-color-secondary: #2F303A;
+}
+
+body {
+    background-color: var(--primari-white-color); /* #000000;*/
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.section-title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+
+
+/* Site nav */
+
+.header-logo {
+    color: #000000;
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-part {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.header-nav-list {
+    list-style: none;   
+}
+
+.header-nav-link.current {
+    color: var(--accent-color);
+}
+
+.header-nav-link {
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+    color: var(--accent-color);
+}
+
+.header-contacts-list {
+    list-style: none;
+}
+
+.header-contacts-link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+    color: var(--accent-color);
+}
+
+
+
+/* index.html */
+/* Site main */
+
+/* Main screen */
+
+.hero {
+    background-color: var(--background-color-secondary);
+}
+
+.hero-title {
+    color: var(--primari-white-color);        
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;  
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* Features */
+
+.features-list {
+    list-style: none;
+}
+
+.features-title {
+    color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features-text {
+    line-height: 1.71;
+}
+
+/* What are we doing */
+
+.services-list {
+    list-style: none;
+}
+
+
+/* Our team */
+
+.team-list {
+    list-style: none;
+}
+
+.team-item-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;    
+    letter-spacing: 0.03em;
+}
+
+.team-item-text {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+
+/* portfolio.html */
+/* Site main */
+/* Description */
+
+.portfolio-list {
+    list-style: none;
+}
+
+.description-list {
+    list-style: none;
+}
+
+.description-title {
+    color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 0.2;
+    letter-spacing: 0.06em;
+}
+
+.description-text {
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--background-color-secondary);
+}
+
+.footer-logo {
+    color: var(--primari-white-color);
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.footer-list {
+    list-style: none;
+    line-height: 1.71;
+}
+
+/* .footer-address-link:hover,
+.footer-address-link:focus {
+    color: var(--accent-color);
+} */
+
+.footer-address-link {
+    color: var(--primari-white-color);
+    text-decoration: none;
+    font-style: normal;
+}
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+    color: var(--accent-color);
+}
+
+.footer-contacts-link {
+    color: var(--link-contacts-color);
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.71;
+}
+
+/* Button */
+
+.button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.button.primary {
+    color: var(--primari-white-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+    color: var(--primari-white-color);
+    background-color: var(--button-primary-color-hover);
+}
+
+.button.secondary {
+    color: var(--title-text-color);
+    background-color: var(--button-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--primari-white-color);
+    background-color: var(--accent-color);
+}
+
+.button.secondary.active {
+    color: var(--primari-white-color);
+    background-color: var(--accent-color);
+}
+
+/* цвет основного текста #212121
+вторичный цвет текста #757575
+цвет H1 #FFFFFF
+цвет текста на кнопках #FFFFFF
+цвет лого-части шапка #2196F3
+цвет лого шапка #000000
+цвет навигации #212121
+цвет навигации при ховере #2196F3
+цвет контактов шапки #757575
+цвет контактов шапки при ховере #2196F3
+цвет лого части подвал # 2196F3
+цвет лого подвал #FFFFFF
+цвет адреса подвал #FFFFFF
+цвет контактов подвал rgba(255, 255, 255, 0.6)
+цвет кнопок #F5F4FA
+*/
