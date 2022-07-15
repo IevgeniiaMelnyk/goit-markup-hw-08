@@ -386,14 +386,17 @@ body {
     line-height: 1.19;
 }
 
-.footer-list {
+.footer-item {
     line-height: 1.71;
+    margin-bottom: 9px;
+}
+.footer-item:last-child {
+    margin-bottom: 0;
 }
 
 .footer-address-link {
     display: block;
-    margin-bottom: 9px;
-
+    
     color: var(--primari-white-color);
 
     text-decoration: none;
@@ -413,9 +416,6 @@ body {
     font-style: normal;
 }
 
-.footer-contacts-link.info {
-    margin-bottom: 9px;
-}
 
 /* ==========Button========== */
 
