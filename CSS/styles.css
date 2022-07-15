@@ -155,7 +155,7 @@ body {
 }
 
 .header-contacts-item + .header-contacts-item {
-    padding-left: 50px;
+    margin-left: 50px;
 }
 
 
@@ -167,15 +167,19 @@ body {
 /* ==========Main screen========== */
 
 .hero {
+    height: 600px;
     padding-top: 200px;
-    padding-bottom: 200px;
-    
+
     background-color: var(--background-color-secondary);
     
     text-align: center;
+    
 }
 
 .hero-title {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
     margin-bottom: 30;
 
@@ -225,7 +229,7 @@ body {
 /* ==========What are we doing========== */
 
 .services {
-    padding-bottom: 94px;
+    padding-top: 0;
 }
 
 .services-title {
@@ -304,7 +308,7 @@ body {
 
 .portfolio-list {
     display: flex;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
@@ -325,6 +329,7 @@ body {
 }
 
 .description-border {
+    padding: 20px 24px;
     border: 1px solid var(--border-color);
 }
 
@@ -339,8 +344,6 @@ body {
 .description-title {
     margin-top: 0;
     margin-bottom: 4px;
-    margin-left: 24px;
-    margin-top: 20px;
 
     color: var(--title-text-color);
 
@@ -350,12 +353,10 @@ body {
 }
 
 .description-text {
-    margin-bottom: 20px;
-    margin-left: 24px;
-
     font-size: 16px;
     line-height: 1.88;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -364,6 +365,7 @@ body {
 /* ==========Footer========== */
 
 .footer {
+    height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -371,6 +373,7 @@ body {
 }
 
 .footer-logo {
+    display: block;  
     margin-bottom: 20px;
 
     color: var(--primari-white-color);
@@ -387,6 +390,7 @@ body {
 }
 
 .footer-address-link {
+    display: block;
     margin-bottom: 9px;
 
     color: var(--primari-white-color);
@@ -401,10 +405,11 @@ body {
 }
 
 .footer-contacts-link {
+    display: block;
+
     color: var(--link-contacts-color);
     text-decoration: none;
     font-style: normal;
-    line-height: 1.71;
 }
 
 .footer-contacts-link.info {
