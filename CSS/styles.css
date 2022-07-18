@@ -19,9 +19,10 @@
 }
 
 body {
-    background-color: var(--primari-white-color); /* #000000;*/
+    background-color: var(--primari-white-color);
+    /* #000000;*/
     color: var(--primary-text-color);
-    
+
     font-family: Roboto, sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -30,9 +31,9 @@ body {
 .section-title {
     margin-top: 0;
     margin-bottom: 0;
-    
+
     color: var(--title-text-color);
-    
+
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -67,9 +68,9 @@ body {
     border-bottom: 1px solid var(--border-header);
 }
 
-.header-logo { 
+.header-logo {
     color: #000000;
-    
+
     text-decoration: none;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -79,7 +80,7 @@ body {
 
 .logo-part {
     color: var(--accent-color);
-    
+
     text-decoration: none;
 }
 
@@ -97,7 +98,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.02em;   
+    letter-spacing: 0.02em;
 }
 
 .header-nav-link:hover,
@@ -111,7 +112,7 @@ body {
     margin-bottom: 32px;
 
     color: var(--primary-text-color);
-    
+
     text-decoration: none;
     font-weight: 500;
     line-height: 1.2;
@@ -145,7 +146,7 @@ body {
     margin-right: 50px;
 } */
 
-.header-nav-item + .header-nav-item {
+.header-nav-item+.header-nav-item {
     margin-left: 50px;
 }
 
@@ -154,10 +155,24 @@ body {
     margin-left: auto;
 }
 
-.header-contacts-item + .header-contacts-item {
+.header-contacts-item+.header-contacts-item {
     margin-left: 50px;
 }
 
+/*==========Hidden==========*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 
 
@@ -171,9 +186,9 @@ body {
     padding-top: 200px;
 
     background-color: var(--background-color-secondary);
-    
+
     text-align: center;
-    
+
 }
 
 .hero-title {
@@ -183,16 +198,19 @@ body {
     margin-top: 0;
     margin-bottom: 30;
 
-    color: var(--primari-white-color);   
+    color: var(--primari-white-color);
 
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;  
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 /* ==========Features========== */
+
+
+
 
 .features-list {
     display: flex;
@@ -203,16 +221,16 @@ body {
     width: 270px;
 }
 
-.features-item + .features-item {
+.features-item+.features-item {
     margin-left: 30px;
 }
 
 .features-title {
     margin-top: 0;
     margin-bottom: 10px;
-    
+
     color: var(--title-text-color);
-    
+
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -222,7 +240,7 @@ body {
 .features-text {
     margin-top: 0;
     margin-bottom: 0;
-    
+
     line-height: 1.71;
 }
 
@@ -235,6 +253,7 @@ body {
 .services-title {
     margin-bottom: 50px;
 }
+
 .services-list {
     display: flex;
     flex-wrap: wrap;
@@ -244,6 +263,7 @@ body {
 .services-img {
     display: block;
 }
+
 /* ==========Our team========== */
 
 .team-title {
@@ -257,9 +277,9 @@ body {
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
     text-align: center;
-}   
+}
 
 /* .team-item + .team-item {
     margin-left: 30px;
@@ -270,12 +290,13 @@ body {
     border-radius: 0px 0px 4px 4px;
     box-shadow: var(--team-box-shadow);
 }
-    
+
 
 
 .team-img {
     display: block;
 }
+
 .team-item-title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -285,7 +306,7 @@ body {
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;    
+    line-height: 1.19;
     letter-spacing: 0.03em;
 }
 
@@ -293,9 +314,9 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 30px;
-    
+
     font-size: 16px;
-    line-height: 1.19;   
+    line-height: 1.19;
 }
 
 
@@ -313,7 +334,7 @@ body {
     justify-content: center;
 }
 
-.portfolio-item + .portfolio-item {
+.portfolio-item+.portfolio-item {
     margin-left: 8px;
 }
 
@@ -326,7 +347,7 @@ body {
     margin-right: 30px;
     margin-bottom: 30px;
     background: var(--primari-white-color);
-    
+
 }
 
 .description-border {
@@ -374,7 +395,7 @@ body {
 }
 
 .footer-logo {
-    display: block;  
+    display: block;
     margin-bottom: 20px;
 
     color: var(--primari-white-color);
@@ -390,13 +411,14 @@ body {
     line-height: 1.71;
     margin-bottom: 9px;
 }
+
 .footer-item:last-child {
     margin-bottom: 0;
 }
 
 .footer-address-link {
     display: block;
-    
+
     color: var(--primari-white-color);
 
     text-decoration: none;
@@ -429,11 +451,11 @@ body {
     padding: 10px 32px;
     border-radius: 4px;
     min-width: 200px;
-        
+
     color: var(--primari-white-color);
     background-color: var(--accent-color);
     box-shadow: var(--button-primary-shadow);
-    
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -490,3 +512,4 @@ body {
 цвет контактов подвал rgba(255, 255, 255, 0.6)
 цвет кнопок #F5F4FA
 */
+
