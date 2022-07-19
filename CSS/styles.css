@@ -29,22 +29,12 @@ body {
 }
 
 .section-title {
-    margin-top: 0;
-    margin-bottom: 0;
-
     color: var(--title-text-color);
 
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-}
-
-.list {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
 }
 
 .container {
@@ -61,6 +51,50 @@ body {
     padding-bottom: 94px;
 }
 
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+
 
 /* ==========Site nav========== */
 
@@ -71,7 +105,6 @@ body {
 .header-logo {
     color: #000000;
 
-    text-decoration: none;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -80,8 +113,6 @@ body {
 
 .logo-part {
     color: var(--accent-color);
-
-    text-decoration: none;
 }
 
 .header-nav-link.current {
@@ -95,7 +126,6 @@ body {
 
     color: var(--title-text-color);
 
-    text-decoration: none;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -113,7 +143,6 @@ body {
 
     color: var(--primary-text-color);
 
-    text-decoration: none;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -184,19 +213,32 @@ body {
 .hero {
     height: 600px;
     padding-top: 200px;
-
-    background-color: var(--background-color-secondary);
-
     text-align: center;
-
+    background-color: #C4C4C4;
 }
+
+.overlay {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ), 
+    url(../images/bg/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} 
 
 .hero-title {
     width: 696px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 30;
+    margin-bottom: 30px;
+    
 
     color: var(--primari-white-color);
 
@@ -209,9 +251,6 @@ body {
 
 /* ==========Features========== */
 
-
-
-
 .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -221,12 +260,50 @@ body {
     width: 270px;
 }
 
-.features-item+.features-item {
+.features-item + .features-item {
     margin-left: 30px;
 }
 
+/* ==========Icon-background========== */
+
+.features-item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-color: var(--button-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.features-item.icon-antenna::before {
+    background-image: url(../images/bg/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+}
+
+.features-item.icon-clock::before {
+    background-image: url(../images/bg/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+}
+
+.features-item.icon-diagram::before {
+    background-image: url(../images/bg/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+}
+
+.features-item.icon-astronaut::before {
+    background-image: url(../images/bg/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+}
+
 .features-title {
-    margin-top: 0;
     margin-bottom: 10px;
 
     color: var(--title-text-color);
@@ -238,9 +315,6 @@ body {
 }
 
 .features-text {
-    margin-top: 0;
-    margin-bottom: 0;
-
     line-height: 1.71;
 }
 
@@ -258,10 +332,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.services-img {
-    display: block;
 }
 
 /* ==========Our team========== */
@@ -291,16 +361,9 @@ body {
     box-shadow: var(--team-box-shadow);
 }
 
-
-
-.team-img {
-    display: block;
-}
-
 .team-item-title {
-    margin-top: 0;
-    margin-bottom: 10px;
     padding-top: 30px;
+    margin-bottom: 10px;
 
     color: var(--title-text-color);
 
@@ -311,8 +374,6 @@ body {
 }
 
 .team-item-text {
-    margin-top: 0;
-    margin-bottom: 0;
     padding-bottom: 30px;
 
     font-size: 16px;
@@ -324,17 +385,13 @@ body {
 /* ==========Site main========== */
 /* ==========Description========== */
 
-.description-img {
-    display: block;
-}
-
 .portfolio-list {
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
 }
 
-.portfolio-item+.portfolio-item {
+.portfolio-item + .portfolio-item {
     margin-left: 8px;
 }
 
@@ -364,7 +421,6 @@ body {
 }
 
 .description-title {
-    margin-top: 0;
     margin-bottom: 4px;
 
     color: var(--title-text-color);
@@ -377,8 +433,6 @@ body {
 .description-text {
     font-size: 16px;
     line-height: 1.88;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 
@@ -400,7 +454,6 @@ body {
 
     color: var(--primari-white-color);
 
-    text-decoration: none;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -418,10 +471,7 @@ body {
 
 .footer-address-link {
     display: block;
-
     color: var(--primari-white-color);
-
-    text-decoration: none;
     font-style: normal;
 }
 
@@ -432,9 +482,7 @@ body {
 
 .footer-contacts-link {
     display: block;
-
     color: var(--link-contacts-color);
-    text-decoration: none;
     font-style: normal;
 }
 
@@ -443,7 +491,6 @@ body {
 
 .button {
     border: 0px;
-
     cursor: pointer;
 }
 
