@@ -303,6 +303,8 @@ address {
     background-size: 70px 70px;
 }
 
+/* ========== */
+
 .features-title {
     margin-bottom: 10px;
 
@@ -378,6 +380,29 @@ address {
 
     font-size: 16px;
     line-height: 1.19;
+}
+
+/* ==========Clients========== */
+
+.clients-title {
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-icon {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+}
+.clients-icon:hover {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
 }
 
 
