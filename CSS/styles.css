@@ -366,7 +366,6 @@ address {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
 }
 
 /* .team-item + .team-item {
@@ -379,8 +378,13 @@ address {
     box-shadow: var(--team-box-shadow);
 }
 
+.team-card {
+    padding: 30px 32px;
+    max-width: 270px;
+    text-align: center;
+}
+
 .team-item-title {
-    padding-top: 30px;
     margin-bottom: 10px;
 
     color: var(--title-text-color);
@@ -392,10 +396,32 @@ address {
 }
 
 .team-item-text {
-    padding-bottom: 30px;
+    margin-bottom: 16px;
 
     font-size: 16px;
     line-height: 1.19;
+}
+
+.list-sn-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    fill: var(--primari-white-color);
+} 
+
+.link-sn-icon:hover {
+    fill: var(--primari-white-color);
+}
+
+.link-sn-icon {
+    display: flex;
+    fill: var(--icon-color);
+    background-color: var(--primari-white-color); 
+    border-radius: 50%;
+} 
+
+.link-sn-icon:hover {
+    background-color: var(--accent-color);
 }
 
 /* ==========Clients========== */
@@ -492,7 +518,7 @@ address {
 /* ==========Footer========== */
 
 .footer {
-    height: 252px;
+    height: 252px; 
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -537,6 +563,44 @@ address {
     font-style: normal;
 }
 
+.footer-icon-text {
+    color: var(--primari-white-color);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-box {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+}
+
+.footer-icon-list {
+    display: flex;  
+}
+
+.footer-icon-item + .footer-icon-item {
+    margin-left: 10px;
+}
+
+.footer-icon-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-icon-item:hover {
+    background-color: var(--accent-color);
+}
+
+.footer-sn-icon {
+    fill: var(--primari-white-color);
+}
+
+.footer-link-sn-icon {
+    display: flex;
+}
 
 /* ==========Button========== */
 
