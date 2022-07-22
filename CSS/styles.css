@@ -409,7 +409,8 @@ address {
     fill: var(--primari-white-color);
 } 
 
-.link-sn-icon:hover {
+.link-sn-icon:hover,
+.link-sn-icon:focus {
     fill: var(--primari-white-color);
 }
 
@@ -420,7 +421,8 @@ address {
     border-radius: 50%;
 } 
 
-.link-sn-icon:hover {
+.link-sn-icon:hover,
+.link-sn-icon:focus {
     background-color: var(--accent-color);
 }
 
@@ -588,10 +590,16 @@ address {
 .footer-icon-item {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-}
+} 
 
-.footer-icon-item:hover {
+.footer-icon-item:hover,
+.footer-icon-item:focus {
     background-color: var(--accent-color);
+} 
+
+.footer-link-sn-icon:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
 }
 
 .footer-sn-icon {
