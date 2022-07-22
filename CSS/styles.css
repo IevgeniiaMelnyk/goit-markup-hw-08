@@ -244,8 +244,6 @@ address {
         rgba(47, 48, 58, 0.4)
     ), 
     url(../images/bg/bg-img.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
 } 
 
@@ -405,17 +403,15 @@ address {
 .list-sn-icon {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    fill: var(--primari-white-color);
-} 
-
-.link-sn-icon:hover,
-.link-sn-icon:focus {
-    fill: var(--primari-white-color);
-}
+    
+}  
 
 .link-sn-icon {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
     fill: var(--icon-color);
     background-color: var(--primari-white-color); 
     border-radius: 50%;
@@ -424,6 +420,7 @@ address {
 .link-sn-icon:hover,
 .link-sn-icon:focus {
     background-color: var(--accent-color);
+    fill: var(--primari-white-color);
 }
 
 /* ==========Clients========== */
@@ -438,21 +435,18 @@ address {
 }
 .clients-link {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
     fill: var(--icon-color); 
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
     border: 1px solid var(--accent-color);
-}
-
-.clients-icon {
-    width: 170px;
-    height: 92px;  
-}
-
-.clients-icon:hover {
     fill: var(--accent-color);
 }
 
@@ -480,10 +474,6 @@ address {
     margin-right: 30px;
     margin-bottom: 30px;
     background: var(--primari-white-color);
-}
-
-.description-item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .description-border {
@@ -514,8 +504,14 @@ address {
     line-height: 1.88;
 }
 
+.description-link {
+    display: block;
+}
 
-
+.description-link:hover,
+.description-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 /* ==========Footer========== */
 
@@ -587,28 +583,22 @@ address {
     margin-left: 10px;
 }
 
-.footer-icon-item {
+.footer-link-sn-icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-} 
-
-.footer-icon-item:hover,
-.footer-icon-item:focus {
-    background-color: var(--accent-color);
-} 
-
-.footer-link-sn-icon:focus {
-    background-color: var(--accent-color);
-    border-radius: 50%;
-}
-
-.footer-sn-icon {
     fill: var(--primari-white-color);
 }
 
-.footer-link-sn-icon {
-    display: flex;
+.footer-link-sn-icon:hover,
+.footer-link-sn-icon:focus {
+    background-color: var(--accent-color);
 }
+
 
 /* ==========Button========== */
 
