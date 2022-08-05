@@ -361,7 +361,7 @@
             </address>
           </div>
           <div class="footer-icon">
-            <p class="footer-icon-text">приєднуйтесь</p>
+            <p class="footer-text">приєднуйтесь</p>
 
             <ul class="footer-icon-list list">
               <li class="footer-icon-item">
@@ -394,6 +394,27 @@
               </li>
             </ul>
           </div>
+          <form class="subscription" name="subscription" action="">
+            <p class="footer-text">Підпишіться на розсилку</p>
+
+            <label for="email">
+              <input
+                class="substription-email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                id="email"
+                required
+              />
+            </label>
+
+            <button class="button primary icon" type="submit">
+              Підписатися
+              <svg class="button-icon-send" width="24" height="24">
+                <use href="./images/svg/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
