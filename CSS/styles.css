@@ -968,6 +968,15 @@ address {
 .form-link {
     color: var(--accent-color);
     display: inline-block;
+
+    transition: border 250ms var(--time-function), 
+    transition: border-radius 250ms var(--time-function);
+}
+
+.form-link:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
 }
 
 .agreement label {
@@ -1001,13 +1010,17 @@ address {
     width: 16px;
     height: 16px;
         
-    transition: background-image 250ms var(--time-function);
+    transition: background-image 250ms var(--time-function),
+    transition: outline 250ms var(--time-function);
 }
 
 .form-check:checked + label::before {
     background-image: url(../images/bg/icon-check.svg);
 }
 
+.form-check:focus + label::before {
+    outline: 1px solid var(--accent-color);
+}
 
 
 
