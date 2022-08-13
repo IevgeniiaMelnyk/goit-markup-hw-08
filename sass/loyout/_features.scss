@@ -1,9 +1,9 @@
-.features_list {
+.features__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.features_title {
+.features__title {
     margin-bottom: 10px;
 
     color: var(--title-text-color);
@@ -12,11 +12,11 @@
     text-transform: uppercase;
 }
 
-.features_text {
+.features__text {
     line-height: 1.71;
 }
 
-.features_item {
+.features__item {
     width: 270px;
 
     & + & {

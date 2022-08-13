@@ -1,4 +1,4 @@
-.backdrop-form_text {
+.backdrop-form__text {
     margin-bottom: 12px;
 
     @include font($fw: 700, $fs: 20px, $lh: 23px);
@@ -16,7 +16,7 @@
         color: var(--primary-text-color);
     }
 
-    & label[for="agreement"] {
+    & label[for="backdrop-form__agreement"] {
         @include font($fs: 14px, $lh: 24px);
         color: var(--primary-text-color);
     }
@@ -47,20 +47,20 @@
     } 
 }
 
-.backdrop-form input:focus+.backdrop-form_icon-holder {
+.backdrop-form input:focus+.backdrop-form__icon-holder {
     fill: var(--accent-color);
 }
 
-.backdrop-form_form-field {
+.backdrop-form__form-field {
     display: block;
     margin-bottom: 10px;
 }
 
-.comment_box {
+.backdrop-form__comment-box{
     margin-bottom: 20px;
 }
 
-.backdrop-form_comment {
+.backdrop-form__comment {
     resize: none;
     display: block;
 
@@ -84,12 +84,12 @@
     }
 }
 
-.backdrop-form_icon-box {
+.backdrop-form__icon-box {
     position: relative;
     margin-bottom: 10px;
 }
 
-.backdrop-form_icon-holder {
+.backdrop-form__icon-holder {
     position: absolute;
     display: block;
     left: 12px;
@@ -99,7 +99,7 @@
     transition: fill 250ms var(--time-function);
 }
 
-.form-link {
+.backdrop-form__form-link {
     color: var(--accent-color);
     display: inline-block;
 
@@ -113,11 +113,11 @@
     }
 }
 
-.agreement label {
+.backdrop-form__agreement label {
     margin: 0;
 }
 
-.backdrop-form_form-field.agreement {
+.backdrop-form__form-field.backdrop-form__agreement {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -148,10 +148,10 @@
     }
 }
 
-.form-check:checked + label::before {
+.backdrop-form__form-check:checked + label::before {
     background-image: url(../images/bg/icon-check.svg);
 }
 
-.form-check:focus + label::before {
+.backdrop-form__form-check:focus + label::before {
     outline: 1px solid var(--accent-color);
 } 

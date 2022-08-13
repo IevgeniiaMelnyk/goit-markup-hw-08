@@ -2,17 +2,17 @@
     padding-top: 0;
 }
 
-.services_title {
+.services__title {
     margin-bottom: 50px;
 }
 
-.services_list {
+.services__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.services_tumb {
+.services__tumb {
     position: relative;
 
     &::before {
@@ -27,7 +27,7 @@
     }
 }
 
-.services_name {
+.services__name {
     position: absolute;
     left: 50%;
     bottom: 27px;

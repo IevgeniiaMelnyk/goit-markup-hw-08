@@ -13,7 +13,7 @@
     border-radius: 4px;
 }
 
-.modal_close-button {
+.modal__close-button {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -29,18 +29,18 @@
     transition: border-color 250ms var(--time-function);
 }
 
-.modal_x {
+.modal__btn-svg {
     position: absolute;
     transition: fill 250ms var(--time-function);
 
-    .modal_close-button:hover &,
-    .modal_close-button:focus & {
+    .modal__close-button:hover &,
+    .modal__close-button:focus & {
         fill: var(--accent-color);
     }
 }
 
-/* .modal_close-button:hover, 
-.modal_close-button:focus {
+/* .modal__close-button:hover, 
+.modal__close-button:focus {
     border-color: var(--accent-color);
 } */
 

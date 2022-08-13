@@ -1,8 +1,8 @@
-.header_portfolio_border {
+.header__portfolio_border {
     border-bottom: 1px solid var(--border-header);
 }
 
-.header_nav-link {
+.header__nav-link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -36,7 +36,7 @@
     }
 }
 
-.header_contacts-link {
+.header__contacts-link {
     display: flex;
     align-items: center;
     margin-top: 32px;
@@ -55,14 +55,14 @@
     }
 }
 
-.header_email-icon {
+.header__email-icon {
     width: 16px;
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
 }
 
-.header_phone-icon {
+.header__phone-icon {
     width: 10px;
     height: 16px;
     margin-right: 10px;
@@ -81,24 +81,24 @@
     align-items: center;
 }
 
-.header-nav_list {
+.header-nav__list {
     display: flex;
     margin-left: 93px;
 }
 
-/* .header-nav_list .header-nav_item:not(:last-child) {
+/* .header-nav__list .header-nav__item:not(:last-child) {
     margin-right: 50px;
 } */
 
-.header-nav_item + .header-nav_item {
+.header-nav__item + .header-nav__item {
     margin-left: 50px;
 }
 
-.header-nav_contacts-list {
+.header-nav__contacts-list {
     display: flex;
     margin-left: auto;
 }
 
-.header-nav_contacts-item + .header-nav_contacts-item {
+.header-nav__contacts-item + .header-nav__contacts-item {
     margin-left: 50px;
 }

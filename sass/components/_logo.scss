@@ -3,16 +3,16 @@
     @include font($fw: 700, $fs: 26px, $lh: 31px);
 }
 
-.logo_part {
+.logo__part {
     color: var(--accent-color);
 }
 
-.header_logo {
+.header__logo {
     color: #000000;
     
 }
 
-.footer_logo {
+.footer__logo {
     display: block;
     margin-bottom: 20px;
 

@@ -1,13 +1,13 @@
-.clients_title {
+.clients__title {
     margin-bottom: 50px;
 }
 
-.clients_list {
+.clients__list {
     display: flex;
     justify-content: space-between;
 }
 
-.clients_link {
+.clients__link {
     @include flex();
     width: 170px;
     height: 92px;
