@@ -1,0 +1,44 @@
+.services {
+    padding-top: 0;
+}
+
+.services_title {
+    margin-bottom: 50px;
+}
+
+.services_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services_tumb {
+    position: relative;
+
+    &::before {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        width: 100%;
+
+        bottom: 0;
+        height: calc(70*100%/294);
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+}
+
+.services_name {
+    position: absolute;
+    left: 50%;
+    bottom: 27px;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    @include font($fw: 700, $fs: 14px, $lh: 16px);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--primari-white-color);
+}

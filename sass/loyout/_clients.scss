@@ -1,0 +1,27 @@
+.clients_title {
+    margin-bottom: 50px;
+}
+
+.clients_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients_link {
+    @include flex();
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    fill: var(--icon-color);
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms var(--time-function);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+        fill: var(--accent-color);
+    }          
+}
+

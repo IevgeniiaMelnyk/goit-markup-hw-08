@@ -1,0 +1,17 @@
+@mixin background-icon($rep: no-repeat, $pos: center, $size: 70px 70px) {
+    background-repeat: $rep;
+    background-position: $pos;
+    background-size: $size;
+}
+
+@mixin flex($disp: flex, $ai: center, $jc: center) {
+    display: $disp;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+@mixin font($fw: 400, $fs: 16px, $lh: 19px) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh / $fs;
+}
