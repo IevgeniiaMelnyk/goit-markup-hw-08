@@ -1,20 +1,26 @@
 .logo {
-    font-family: Raleway, sans-serif;
-    @include font($fw: 700, $fs: 26px, $lh: 31px);
+  font-family: Raleway, sans-serif;
+  @include font($fw: 700, $fs: 24px, $lh: 28px);
 }
 
 .logo__part {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .header__logo {
-    color: #000000;
-    
+  color: #000000;
 }
 
 .footer__logo {
-    display: block;
-    margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 
-    color: var(--primari-white-color);
+  color: var(--primari-white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-family: Raleway, sans-serif;
+    @include font($fw: 700, $fs: 26px, $lh: 31px);
+  }
 }

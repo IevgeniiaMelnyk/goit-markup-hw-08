@@ -21,7 +21,7 @@
   <body>
     <!--Шапка сайту-->
 
-    <header class="header__portfolio_border">
+    <header class="header header__portfolio_border">
       <div class="container nav">
         <nav class="header-nav">
           <a class="logo header__logo link" href="./index.html" lang="en">
@@ -41,6 +41,12 @@
             </li>
           </ul>
         </nav>
+
+        <button class="mobile-menu-open" type="button">
+          <svg class="mobile-menu-open__icon" width="40" height="40">
+            <use href="./images/svg/sprite.svg#icon-menu-mobile"></use>
+          </svg>
+        </button>
 
         <ul class="header-nav__contacts-list list">
           <li class="header-nav__contacts-item">
@@ -101,13 +107,41 @@
             <li class="description__item">
               <a class="description__link link" href="">
                 <div class="description__tumb">
-                  <img
-                    class="description-img"
-                    src="./images/portfolio/tehno.jpg"
-                    alt="Ноутбук с изображением сайта на экране"
-                    width="370"
-                    height="292"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/tehno.jpg   1x,
+                        ./images/portfolio/tehno2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                      hight="292"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tehno-tablet.jpg   1x,
+                        ./images/portfolio/tehno-tablet2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                      hight="294"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tehno-mobil.jpg   1x,
+                        ./images/portfolio/tehno-mobil2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="450"
+                      hight="294"
+                    />
+                    <img
+                      class="description-img"
+                      src="./images/portfolio/tehno.jpg"
+                      alt="Ноутбук с изображением сайта на экране"
+                    />
+                  </picture>
+
                   <p class="description__tumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -115,7 +149,9 @@
                   </p>
                 </div>
 
-                <div class="description__border">
+                <div
+                  class="description__border description__border_size-first-element"
+                >
                   <h3 class="description__title">Технокряк</h3>
                   <p class="description__text">Веб-сайт</p>
                 </div>
@@ -124,13 +160,41 @@
             <li class="description__item">
               <a class="description__link link" href="">
                 <div class="description__tumb">
-                  <img
-                    class="description-img"
-                    src="./images/portfolio/poster.jpg"
-                    alt="Постер - два мужчины играют в баскетбол"
-                    width="370"
-                    height="292"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/poster.jpg   1x,
+                        ./images/portfolio/poster2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                      hight="292"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-tablet.jpg   1x,
+                        ./images/portfolio/poster-tablet2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                      hight="294"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-mobil.jpg   1x,
+                        ./images/portfolio/poster-mobil2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="450"
+                      hight="294"
+                    />
+                    <img
+                      class="description-img"
+                      src="./images/portfolio/poster.jpg"
+                      alt="Постер - два мужчины играют в баскетбол"
+                    />
+                  </picture>
+
                   <p class="description__tumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -149,13 +213,41 @@
             <li class="description__item">
               <a class="description__link link" href="">
                 <div class="description__tumb">
-                  <img
-                    class="description-img"
-                    src="./images/portfolio/seafood.jpg"
-                    alt="Логотип с изображением рыбы и названием ресторана"
-                    width="370"
-                    height="292"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood.jpg   1x,
+                        ./images/portfolio/seafood2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                      hight="292"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-tablet.jpg   1x,
+                        ./images/portfolio/seafood-tablet2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                      hight="294"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-mobil.jpg   1x,
+                        ./images/portfolio/seafood-mobil2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="450"
+                      hight="294"
+                    />
+                    <img
+                      class="description-img"
+                      src="./images/portfolio/seafood.jpg"
+                      alt="Логотип с изображением рыбы и названием ресторана"
+                    />
+                  </picture>
+
                   <p class="description__tumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -174,13 +266,41 @@
             <li class="description__item">
               <a class="description__link link" href="">
                 <div class="description__tumb">
-                  <img
-                    class="description-img"
-                    src="./images/portfolio/prime.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="292"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/prime.jpg   1x,
+                        ./images/portfolio/prime2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                      hight="292"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-tablet.jpg   1x,
+                        ./images/portfolio/prime-tablet2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                      hight="294"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-mobil.jpg   1x,
+                        ./images/portfolio/prime-mobil2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="450"
+                      hight="294"
+                    />
+                    <img
+                      class="description-img"
+                      src="./images/portfolio/prime.jpg"
+                      alt="Наушники"
+                    />
+                  </picture>
+
                   <p class="description__tumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -199,13 +319,41 @@
             <li class="description__item">
               <a class="description__link link" href="">
                 <div class="description__tumb">
-                  <img
-                    class="description-img"
-                    src="./images/portfolio/boxes.jpg"
-                    alt="Две коробки"
-                    width="370"
-                    height="292"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes.jpg   1x,
+                        ./images/portfolio/boxes2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                      hight="292"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-tablet.jpg   1x,
+                        ./images/portfolio/boxes-tablet2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                      hight="294"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-mobil.jpg   1x,
+                        ./images/portfolio/boxes-mobil2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="450"
+                      hight="294"
+                    />
+                    <img
+                      class="description-img"
+                      src="./images/portfolio/boxes.jpg"
+                      alt="Две коробки"
+                    />
+                  </picture>
+
                   <p class="description__tumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -224,13 +372,41 @@
             <li class="description__item">
               <a class="description__link link" href="">
                 <div class="description__tumb">
-                  <img
-                    class="description-img"
-                    src="./images/portfolio/inspiration.jpg"
-                    alt="Монитор с изображением сайта на экране"
-                    width="370"
-                    height="292"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration.jpg   1x,
+                        ./images/portfolio/inspiration2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                      hight="292"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-tablet.jpg   1x,
+                        ./images/portfolio/inspiration-tablet2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                      hight="294"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-mobil.jpg   1x,
+                        ./images/portfolio/inspiration-mobil2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="450"
+                      hight="294"
+                    />
+                    <img
+                      class="description-img"
+                      src="./images/portfolio/inspiration.jpg"
+                      alt="Монитор с изображением сайта на экране"
+                    />
+                  </picture>
+
                   <p class="description__tumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -249,13 +425,41 @@
             <li class="description__item">
               <a class="description__link link" href="">
                 <div class="description__tumb">
-                  <img
-                    class="description-img"
-                    src="./images/portfolio/limited.jpg"
-                    alt="Печатное издание - журнал"
-                    width="370"
-                    height="292"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/limited.jpg     1x,
+                        ./images/portfolio/limited2x.jpg2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                      hight="292"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-tablet.jpg   1x,
+                        ./images/portfolio/limited-tablet2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                      hight="294"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-mobil.jpg   1x,
+                        ./images/portfolio/limited-mobil2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="450"
+                      hight="294"
+                    />
+                    <img
+                      class="description-img"
+                      src="./images/portfolio/limited.jpg"
+                      alt="Печатное издание - журнал"
+                    />
+                  </picture>
+
                   <p class="description__tumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -274,13 +478,41 @@
             <li class="description__item">
               <a class="description__link link" href="">
                 <div class="description__tumb">
-                  <img
-                    class="description-img"
-                    src="./images/portfolio/lab.jpg"
-                    alt="Этикетка с логотипом"
-                    width="370"
-                    height="292"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/lab.jpg   1x,
+                        ./images/portfolio/lab2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                      hight="292"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-tablet.jpg   1x,
+                        ./images/portfolio/lab-tablet2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                      hight="294"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-mobil.jpg   1x,
+                        ./images/portfolio/lab-mobil2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="450"
+                      hight="294"
+                    />
+                    <img
+                      class="description-img"
+                      src="./images/portfolio/lab.jpg"
+                      alt="Этикетка с логотипом"
+                    />
+                  </picture>
+
                   <p class="description__tumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -299,13 +531,41 @@
             <li class="description__item">
               <a class="description__link link" href="">
                 <div class="description__tumb">
-                  <img
-                    class="description-img"
-                    src="./images/portfolio/business.jpg"
-                    alt="Ноутбук с изображением приложения на экране"
-                    width="370"
-                    height="292"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/business.jpg   1x,
+                        ./images/portfolio/business2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                      hight="292"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/business-tablet.jpg   1x,
+                        ./images/portfolio/business-tablet2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                      hight="294"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/business-mobil.jpg   1x,
+                        ./images/portfolio/business-mobil2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="450"
+                      hight="294"
+                    />
+                    <img
+                      class="description-img"
+                      src="./images/portfolio/business.jpg"
+                      alt="Ноутбук с изображением приложения на экране"
+                    />
+                  </picture>
+
                   <p class="description__tumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -329,71 +589,82 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__box">
-          <div class="logo-address">
-            <a class="logo footer__logo link" href="./index.html" lang="en"
-              ><span class="logo__part" lang="en">Web</span>Studio</a
-            >
+          <div class="footer__tablet-box">
+            <div class="logo-address">
+              <a class="logo footer__logo link" href="./index.html" lang="en"
+                ><span class="logo__part" lang="en">Web</span>Studio</a
+              >
 
-            <address class="address">
-              <ul class="footer-list list">
-                <li class="footer__item">
-                  <a
-                    class="footer__address-link link"
-                    href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                    >м. Київ, пр-т Лесі Українки, 26</a
-                  >
+              <address class="address">
+                <ul class="footer-list list">
+                  <li class="footer__item">
+                    <a
+                      class="footer__address-link link"
+                      href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      >м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a
+                      class="footer__contacts-link info link"
+                      href="mailto:info@example.com"
+                      >info@example.com</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a
+                      class="footer__contacts-link link"
+                      href="tel:+380991111111"
+                      >+38 099 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer__icon">
+              <p class="footer__text">приєднуйтесь</p>
+
+              <ul class="footer__icon-list list">
+                <li class="footer__icon-item">
+                  <a class="footer__link-sn-icon link" href="">
+                    <svg class="sn-icon" width="20" height="20">
+                      <use
+                        href="./images/svg/sprite.svg#icon-sn-instagram"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer__item">
-                  <a
-                    class="footer__contacts-link info link"
-                    href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
+                <li class="footer__icon-item">
+                  <a class="footer__link-sn-icon link" href="">
+                    <svg class="sn-icon" width="20" height="20">
+                      <use href="./images/svg/sprite.svg#icon-sn-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer__item">
-                  <a class="footer__contacts-link link" href="tel:+380991111111"
-                    >+38 099 111 11 11</a
-                  >
+                <li class="footer__icon-item">
+                  <a class="footer__link-sn-icon link" href="">
+                    <svg class="sn-icon" width="20" height="20">
+                      <use
+                        href="./images/svg/sprite.svg#icon-sn-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__icon-item">
+                  <a class="footer__link-sn-icon link" href="">
+                    <svg class="sn-icon" width="20" height="20">
+                      <use
+                        href="./images/svg/sprite.svg#icon-sn-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
+            </div>
           </div>
-          <div class="footer__icon">
-            <p class="footer__text">приєднуйтесь</p>
 
-            <ul class="footer__icon-list list">
-              <li class="footer__icon-item">
-                <a class="footer__link-sn-icon link" href="">
-                  <svg class="sn-icon" width="20" height="20">
-                    <use href="./images/svg/sprite.svg#icon-sn-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__icon-item">
-                <a class="footer__link-sn-icon link" href="">
-                  <svg class="sn-icon" width="20" height="20">
-                    <use href="./images/svg/sprite.svg#icon-sn-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__icon-item">
-                <a class="footer__link-sn-icon link" href="">
-                  <svg class="sn-icon" width="20" height="20">
-                    <use href="./images/svg/sprite.svg#icon-sn-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__icon-item">
-                <a class="footer__link-sn-icon link" href="">
-                  <svg class="sn-icon" width="20" height="20">
-                    <use href="./images/svg/sprite.svg#icon-sn-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
           <form class="footer__subscription" name="footer__subscription">
             <p class="footer__text">Підпишіться на розсилку</p>
 
