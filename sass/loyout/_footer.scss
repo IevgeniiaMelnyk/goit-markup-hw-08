@@ -12,10 +12,10 @@
 .footer__item {
   line-height: 1.71;
   margin-bottom: 4px;
+}
 
-  &:last-child {
-    margin-bottom: 60px;
-  }
+.logo-address {
+  margin-bottom: 60px;
 }
 
 .footer__address-link {
@@ -44,10 +44,13 @@
   margin-bottom: 20px;
 }
 
+.footer__icon {
+  margin-bottom: 60px;
+}
+
 .footer__icon-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .footer__icon-item + .footer__icon-item {
@@ -107,20 +110,26 @@
 
   .footer__icon {
     margin-left: 165px;
-  }
-
-  .footer__item:last-child {
     margin-bottom: 0;
   }
 
-  .footer__icon-list {
+  .logo-address {
+    margin-bottom: 0;
+  }
+
+  .footer__item:last-of-type {
     margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .logo-address {
+    margin-bottom: 0;
+  }
+
   .footer__icon {
     margin-left: 85px;
+    margin-bottom: 0;
   }
 
   .footer__item {
@@ -143,6 +152,10 @@
     & .footer__subscription {
       margin-left: auto;
     }
+  }
+
+  .footer__substription-email {
+    margin-bottom: 0;
   }
 
   .footer__tablet-box {
