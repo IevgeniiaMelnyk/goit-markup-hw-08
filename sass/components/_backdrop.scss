@@ -1,20 +1,21 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                visibility 250ms var(--time-function);
+  overflow-y: scroll;
 
-    &.is_hidden {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }
+  background-color: rgba(0, 0, 0, 0.2);
 
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms var(--time-function);
+
+  &.is_hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
-
