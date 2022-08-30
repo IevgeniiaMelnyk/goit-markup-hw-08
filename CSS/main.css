@@ -147,12 +147,14 @@ body.modal-open {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms var(--time-function), visibolity 250ms var(--time-function);
+    transform: translateY(100%);
+    transition: opacity 250ms var(--time-function), visibolity 250ms var(--time-function), transform 500ms var(--time-function);
   }
   .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transform: translateY(0);
   }
   .mobile-menu__close-btn {
     position: absolute;
