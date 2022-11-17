@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
     <link rel="stylesheet" href="./CSS/main.css" />
   </head>
 
@@ -43,7 +45,7 @@
               >
             </li>
             <li class="header-nav__item">
-              <a class="header__nav-link link" href="">Контакти</a>
+              <a class="header__nav-link link" href="#footer">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -686,7 +688,7 @@
 
     <!--Підвал-->
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__box">
           <div class="footer__tablet-box">
@@ -803,6 +805,7 @@
             <use href="./images/svg/sprite.svg#icon-modal__btn-svg"></use>
           </svg>
         </button>
+        <!-- Форма -->
 
         <form class="backdrop-form" autocomplete="on">
           <p class="backdrop-form__text">
@@ -859,6 +862,7 @@
               </span>
             </span>
           </div>
+
           <div class="backdrop-form__form-field comment_box">
             <label for="comment">Коментар</label>
             <textarea
@@ -868,6 +872,7 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
+
           <div class="backdrop-form__form-field backdrop-form__agreement">
             <input
               class="backdrop-form__form-check visually_hidden"
@@ -889,5 +894,6 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/anchor-scroll.js"></script>
   </body>
 </html>
